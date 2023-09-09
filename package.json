@@ -1,0 +1,28 @@
+{
+  "name": "get-youtube-subscribers",
+  "version": "1.0.0",
+  "description": "This is an AlmaBetter Backend Project (Get Youtube Subscribers) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit"
+  },
+  "author": "Mohd Adnan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "4.17.1",
+    "mochawesome": "6.1.1",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1"
+  },
+  "keywords": [
+    "AlmaBetter",
+    "backend",
+    "get-youtube-subscribers",
+    "api"
+  ]
+}
