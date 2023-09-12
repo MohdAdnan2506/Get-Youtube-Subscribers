@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 
 // GET API for all Subscribers 
-app.get("https://get-youtube-subscribers-mohdadnan2506.vercel.app/subscribers", async (req, res) => {
+app.get("/subscribers", async (req, res) => {
     try {
         let AllSubscribers = await Subscribers.find();
         res.status(200).send(AllSubscribers);
@@ -25,7 +25,7 @@ app.get("https://get-youtube-subscribers-mohdadnan2506.vercel.app/subscribers", 
 });
 
 // GET API for getting subscribers by name and Subscribed Channel
-app.get('https://get-youtube-subscribers-mohdadnan2506.vercel.app/subscribers/names', async (req, res) => {
+app.get('/subscribers/names', async (req, res) => {
     try {
         let subscriberByName = await Subscribers.find().select('name subscribedChannel');
         res.status(200).send(subscriberByName);
@@ -36,7 +36,7 @@ app.get('https://get-youtube-subscribers-mohdadnan2506.vercel.app/subscribers/na
 
 
 // GET API for getting subscriber by ID
-app.get('https://get-youtube-subscribers-mohdadnan2506.vercel.app/subscribers/:id', async (req, res) => {
+app.get('/subscribers/:id', async (req, res) => {
     try {
         let subscriberByID = await Subscribers.findById(req.params.id);
         res.status(200).send(subscriberByID);
