@@ -15,10 +15,10 @@ Clone the repository- https://github.com/MohdAdnan2506/Get-Youtube-Subscribers
 
 Install dependencies - npm i
 
-Change MongoDB Connection string to "mongodb://localhost/subscribers" in createDatabase.js and index.js files.
+Change MongoDB Connection string to "mongodb://localhost/subscribers" in "createDatabase.js" and "index.js" files.
 
-Create Database by running createDatabase.js with this command- node src/createDatabase.js
+Create Database by running "createDatabase.js" file with this command- node src/createDatabase.js in terminal
 
 Start The Application with this command node index.js
 
-Go to browser and search localhost:3000
+Go to any browser and search localhost:3000
